@@ -1,0 +1,30 @@
+{
+  "name": "coderhub",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/main.js",
+    "cm": "git-cz"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@koa/router": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "koa": "^2.15.3",
+    "koa-bodyparser": "^4.4.1",
+    "mysql2": "^3.12.0",
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
