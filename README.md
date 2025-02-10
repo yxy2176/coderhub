@@ -16,8 +16,9 @@ npm install nodemon -g
 npm run start
 ```
 
+## 生成 token 所需的公钥&密钥
 
-## 生成token所需的公钥&密钥
 ```
-
+openssl genrsa -out private.key 1024
+openssl rsa -in private.key -pubout -out public.key
 ```
