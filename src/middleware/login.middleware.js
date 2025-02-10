@@ -9,6 +9,7 @@ const md5password = require("../utils/md5-password");
 const jwt = require("jsonwebtoken");
 const { PUBLIC_KEY } = require("../config/serect");
 
+// 判断用户输入的身份信息是否正确
 const verifyLogin = async (ctx, next) => {
   const { name, password } = ctx.request.body;
 
@@ -36,6 +37,7 @@ const verifyLogin = async (ctx, next) => {
   await next();
 };
 
+// 判断身份令牌
 const verifyAuth = async (ctx, next) => {
   // 1 获取token
   const authorization = ctx.headers.authorization;
