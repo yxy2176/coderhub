@@ -15,3 +15,9 @@ npm install
 npm install nodemon -g
 npm run start
 ```
+
+
+## 生成token所需的公钥&密钥
+```
+
+```
