@@ -13,11 +13,13 @@
   "dependencies": {
     "@koa/router": "^13.1.0",
     "dotenv": "^16.4.7",
+    "jsonwebtoken": "^9.0.2",
     "koa": "^2.15.3",
     "koa-bodyparser": "^4.4.1",
     "koa-router": "^13.0.1",
     "mysql2": "^3.12.0",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "openssl": "^2.0.0"
   },
   "devDependencies": {
     "commitizen": "^4.3.1",
